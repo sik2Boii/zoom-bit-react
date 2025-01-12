@@ -4,7 +4,7 @@ import Top10List from "./components/Top10List";
 function App() {
   return (
     <div>
-      <h1>Top 10 Trading Prices</h1>
+      <h1>ZOOM-BIT 현재가 상위 30</h1>
       <Top10List />
     </div>
   );

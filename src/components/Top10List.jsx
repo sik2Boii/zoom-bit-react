@@ -144,7 +144,7 @@ function Top10List() {
   return (
     <>
       <table
-        className="top10-table"
+        className="top30-table"
         border="1"
         style={{ width: "100%", textAlign: "left", borderCollapse: "collapse" }}
       >
