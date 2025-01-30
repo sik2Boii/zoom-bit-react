@@ -17,7 +17,7 @@ function Top10List() {
   useEffect(() => {
     const fetchInitialData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:8080/api/get-top10");
+        const response = await fetch("https://3.82.228.203:8080/api/get-top10");
         const data = await response.json();
         setTop10Data(data);
         // 깊은 복사(deep copy)로 이전 데이터를 저장
@@ -33,7 +33,7 @@ function Top10List() {
   // WebSocket 연결
   useEffect(() => {
     const connectWebSocket = () => {
-      const socket = new WebSocket("ws://127.0.0.1:8080/ws/get-top10");
+      const socket = new WebSocket("wss://3.82.228.203:8080/ws/get-top10");
       socketRef.current = socket;
 
       socket.onopen = () => {};
